@@ -63,7 +63,7 @@ a {
 }
 
 .nav_btn{
-  width: 120px;
+  width: 140px;
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 1.0em;
@@ -75,6 +75,7 @@ a {
   transition: 0.4s ease;
   margin-right: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* フッター */
