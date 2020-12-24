@@ -10,6 +10,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="header">
+      <div class="nav">
+        <div class="nav_left">
+          <%= link_to "TURISYO", root_path, class: :nav_link %>
+        </div>
+        <%# devise導入後ログイン状態で表示を分けること %>
+        <div class="nav_right">
+          <%# user_signed_in? %>
+            <%#<%= link_to "ログアウト", "#", class: :nav_btn %>
+            <%#<%= link_to "新規作成", "#", class: :nav_btn %>
+            <%#<%= link_to "マイページ", "#", class: :nav_btn %>
+          <%# else %>
+            <%= link_to "ログイン", "#", class: :nav_btn %>
+            <%= link_to "新規登録", "#", class: :nav_btn %>
+          <%# end %>
+        </div>
+      </div>
+    </header>
+      <%= yield %>
+    <footer>
+      <p class="copyright"> Copyright ©︎ TURISYO All rights reserved.</p>
+    </footer>
   </body>
 </html>
